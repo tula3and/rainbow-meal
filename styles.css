@@ -95,7 +95,11 @@ table tr th {
 
 .container__menu.active summary {
   font-size: 24px;
-  margin: 20px 10%;
+  margin: 20px 10% 0px 10%;
+  background-color: var(--background-color);
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--text-color);
 }
 
 .container__menu.active table {
@@ -113,7 +117,11 @@ table tr th {
 
 .container__place.active summary {
   font-size: 24px;
-  margin: 20px 10%;
+  margin: 20px 10% 0px 10%;
+  background-color: var(--background-color);
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--text-color);
 }
 
 .container__place.active table {
