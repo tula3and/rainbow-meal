@@ -79,16 +79,12 @@ table {
 
 table th,
 table td {
-  padding: 12px 15px;
+  padding: 12px 2px;
   border-bottom: 1px solid #dddddd;
 }
 
 table th {
   display: none;
-}
-
-.vertical {
-  table-layout: fixed;
 }
 
 .container__price {
@@ -124,6 +120,10 @@ table th {
 .container__menu.active table {
   font-size: 18px;
   margin: 20px 10%;
+}
+
+.vertical {
+  table-layout: fixed;
 }
 
 .container__place {
