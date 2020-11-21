@@ -17,9 +17,9 @@ menuArray[1] = "양식";
 menuArray[2] = "일식";
 menuArray[3] = "아시안";
 menuArray[4] = "분식";
-menuArray[6] = "한식";
-menuArray[8] = "패스트푸드";
-menuArray[9] = "카페";
+menuArray[5] = "한식";
+menuArray[6] = "패스트푸드";
+menuArray[7] = "카페";
 
 toogleBtn.addEventListener('click', function () {
     menu.classList.toggle('active');
@@ -45,7 +45,7 @@ place.addEventListener('click', function () {
 });
 
 random.addEventListener('click', function () {
-    let imgNum = Math.round(Math.random() * 9);
+    let imgNum = Math.round(Math.random() * 7);
     let selected = menuArray[imgNum];
     alert("오늘은 " + selected + " 어떠신가요?");
 });
