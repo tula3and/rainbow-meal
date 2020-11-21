@@ -87,6 +87,10 @@ table th {
   display: none;
 }
 
+.vertical {
+  table-layout: fixed;
+}
+
 .container__price {
   display: none;
 }
