@@ -12,16 +12,14 @@ const place = document.querySelector('#place');
 const random = document.querySelector('#random');
 
 var menuArray = new Array();
-menuArray[0] = "한식";
+menuArray[0] = "중식";
 menuArray[1] = "양식";
 menuArray[2] = "일식";
 menuArray[3] = "아시안";
 menuArray[4] = "분식";
-menuArray[5] = "치킨";
-menuArray[6] = "족발·보쌈";
-menuArray[7] = "피자";
+menuArray[6] = "한식";
 menuArray[8] = "패스트푸드";
-menuArray[9] = "카페·디저트";
+menuArray[9] = "카페";
 
 toogleBtn.addEventListener('click', function () {
     menu.classList.toggle('active');

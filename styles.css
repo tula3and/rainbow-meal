@@ -68,12 +68,21 @@ body {
   color: var(--accent-color);
 }
 
+table tr th {
+  display: none;
+}
+
 .container__price {
   display: none;
 }
 
 .container__price.active {
   display: flex;
+}
+
+.container__price.active table {
+  font-size: 20px;
+  margin: 20px 10%;
 }
 
 .container__menu {
@@ -84,12 +93,36 @@ body {
   display: flex;
 }
 
+.container__menu.active summary {
+  font-size: 24px;
+  margin: 20px 10%;
+}
+
+.container__menu.active table {
+  font-size: 20px;
+  margin: 20px 10%;
+}
+
 .container__place {
   display: none;
 }
 
 .container__place.active {
   display: flex;
+}
+
+.container__place.active summary {
+  font-size: 24px;
+  margin: 20px 10%;
+}
+
+.container__place.active table {
+  font-size: 20px;
+  margin: 20px 10%;
+}
+
+div {
+  flex-direction: column;
 }
 
 @media screen and (max-width: 768px) {
