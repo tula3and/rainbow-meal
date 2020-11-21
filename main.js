@@ -2,31 +2,53 @@ const toogleBtn = document.querySelector('.navbar__toogle');
 const menu = document.querySelector('.navbar__menu');
 const icons = document.querySelector('.navbar__icons');
 
+const priceSort = document.querySelector('.container__price');
+const menuSort = document.querySelector('.container__menu');
+const placeSort = document.querySelector('.container__place');
+
 const price = document.querySelector('#price');
-const upvote = document.querySelector('#upvote');
+const block = document.querySelector('#menu');
 const place = document.querySelector('#place');
+const random = document.querySelector('#random');
 
-let likebtn = document.querySelector('#likebtn');
-let input1 = document.querySelector('#input1');
-
-likebtn.addEventListener('click', function () {
-    input1.value = parseInt(input1.value) + 1;
-    input1.style.color = "ff0000";
-});
+var menuArray = new Array();
+menuArray[0] = "한식";
+menuArray[1] = "양식";
+menuArray[2] = "일식";
+menuArray[3] = "아시안";
+menuArray[4] = "분식";
+menuArray[5] = "치킨";
+menuArray[6] = "족발·보쌈";
+menuArray[7] = "피자";
+menuArray[8] = "패스트푸드";
+menuArray[9] = "카페·디저트";
 
 toogleBtn.addEventListener('click', function () {
     menu.classList.toggle('active');
     icons.classList.toggle('active');
 });
 
-price.addEventListener('click', function filter() {
-
+price.addEventListener('click', function () {
+    priceSort.classList.add('active');
+    menuSort.classList.remove('active');
+    placeSort.classList.remove('active');
 });
 
-upvote.addEventListener('click', function filter() {
-
+block.addEventListener('click', function () {
+    priceSort.classList.remove('active');
+    menuSort.classList.add('active');
+    placeSort.classList.remove('active');
 });
 
-place.addEventListener('click', function filter() {
-
+place.addEventListener('click', function () {
+    priceSort.classList.remove('active');
+    menuSort.classList.remove('active');
+    placeSort.classList.add('active');
 });
+
+random.addEventListener('click', function () {
+    let imgNum = Math.round(Math.random() * 9);
+    let selected = menuArray[imgNum];
+    alert("오늘은 " + selected + " 어떠신가요?");
+});
+

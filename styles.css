@@ -68,37 +68,28 @@ body {
   color: var(--accent-color);
 }
 
-.voting {
-  position: relative;
-  border: 3px solid #303030;
-  border-radius: 4px;
-  padding: 5px;
-  margin-top: 5px;
+.container__price {
+  display: none;
 }
 
-input {
-  width: 50px;
-  border: none;
-  background: none;
-  color: #919191;
-  font-size: 30px;
-  margin: 0 10px;
-  pointer-events: none;
+.container__price.active {
+  display: flex;
 }
 
-button {
-  color: var(--accent-color);
-  background: none;
-  border: none;
-  font-size: 30px;
-  padding: 0 15px;
-  margin: 10px 0;
-  margin-left: 20px;
-  cursor: pointer;
+.container__menu {
+  display: none;
 }
 
-button:active {
-  transform: scale(1.2);
+.container__menu.active {
+  display: flex;
+}
+
+.container__place {
+  display: none;
+}
+
+.container__place.active {
+  display: flex;
 }
 
 @media screen and (max-width: 768px) {
